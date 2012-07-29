@@ -1,0 +1,110 @@
+a, a:link
+	cursor pointer
+
+body
+	padding-top 60px
+
+table
+	tfoot, tbody
+		th
+			border-top 1px solid #DDD
+
+
+.navbar-fixed-top .brand
+  padding-right 0
+  padding-left 0
+  margin-left 20px
+  float: right
+  font-weight bold
+  color: #000
+  text-shadow 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125)
+  -webkit-transition: all .2s linear
+     -moz-transition: all .2s linear
+          transition: all .2s linear
+
+.navbar-fixed-top .brand:hover
+  text-decoration none
+
+/* Faded out hr */
+hrsoften()
+  height 1px
+  background-image -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0))
+  background-image    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0))
+  background-image     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0))
+  background-image      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0))
+  border 0
+
+.soften
+  margin 54px 0
+  hrsoften()
+
+.soften-nomargin
+  hrsoften()
+
+
+/* Marketing section of Overview
+-------------------------------------------------- */
+.marketing .row {
+  margin-bottom: 9px;
+}
+.marketing h1 {
+  margin: 36px 0 27px;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+.marketing h2,
+.marketing h3 {
+  font-weight: 300;
+}
+.marketing h2 {
+  font-size: 22px;
+}
+.marketing p {
+  margin-right: 10px;
+}
+.marketing .bs-icon {
+  float: left;
+  margin: 7px 10px 0 0;
+  opacity: .8;
+}
+.marketing .small-bs-icon {
+  float: left;
+  margin: 4px 5px 0 0;
+}
+
+.marketing-byline {
+  margin: -18px 0 27px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #999;
+  text-align: center;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+
+
+/* Misc
+-------------------------------------------------- */
+
+/* Make tables spaced out a bit more */
+h2 + table,
+h3 + table,
+h4 + table,
+h2 + .row {
+  margin-top: 5px;
+}
+

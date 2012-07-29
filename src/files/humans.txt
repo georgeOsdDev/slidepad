@@ -1,0 +1,48 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  <SlideInitializer>: <Takeharu Oshida>
+  Site: http://github.com/georgeOsdDev/slideInitializer.docpad
+  Twitter: george_osd
+  Location: Japan
+
+/* THANKS */
+  bervy (https://github.com/bevry/docpad)
+  tmcw (https://github.com/tmcw/big)
+  bartaz (https://github.com/bartaz/impress.js)
+  imakewebthings (https://github.com/imakewebthings/deck.js)
+  google (http://code.google.com/p/html5slides/)
+  twitter (http://twitter.github.com/bootstrap)
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Docpad, Modernizr, jQuery, Twitter-bootstrap
+  Software: big, deck.js, html5slides, impress
+
+
+
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:
