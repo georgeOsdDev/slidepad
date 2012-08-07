@@ -11,6 +11,7 @@ datarotatey: 0
 datarotatez: 0
 datascale: 0
 ---
-
+# See more detail
+[Get Started](/pages/start)
 # Thank you!
 [Back to Home](/)

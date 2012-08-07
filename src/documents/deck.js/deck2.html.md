@@ -7,4 +7,3 @@ child: ['deck3','deck4','deck5']
 ---
 ## Deck.js is
 ### Modern HTML Presentations
-#### more detail

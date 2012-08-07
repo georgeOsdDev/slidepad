@@ -18,5 +18,4 @@ Create .html.md files with these meta-info
  * datay: 3000
  * datarotate: 90
  * datascale: 5
-And Save it at /src/documents/impress
 </span>

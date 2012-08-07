@@ -4,7 +4,7 @@ pageOrder: 9
 tags: ['big']
 ---
 Create _.html.md_ file include metadata like below
-    ---　　　　　　　 _// start meta data_
+    ---　　　　　　　 _// start of meta data_
     title: 'big Third'　　_// any title as you like_
     pageOrder: 3　　 _// Number of slide_
     tags: ['big']　　　_// must include 'big'_

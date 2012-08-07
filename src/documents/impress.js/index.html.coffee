@@ -17,7 +17,7 @@ div id:'impress', ->
       id:sectionId,
       'data-x':page.datax if page.datax,
       'data-y':page.datay if page.datay,
-      'data-z':page.dataz if page.datay,
+      'data-z':page.dataz if page.dataz,
       'data-rotate':page.datarotate if page.datarotate,
       'data-rotate-x':page.datarotatex if page.datarotatex,
       'data-rotate-y':page.datarotatey if page.datarotatey,

@@ -32,7 +32,7 @@ div '.container', ->
       a href:'http://nodejs.org/', target:'_blank', title:'Node.js', ->
         text 'Node.js'
       br ->
-      text "copyright 2012 &copy;"
+      text "Slidepad is created and maintained by"
       a href:'http://about.me/takeharu.oshida', target:'_blank', title:'about me', ->
         text "Takeharu.Oshida"
     p ->
@@ -44,5 +44,5 @@ text @getBlock('scripts').add([
   '/vendor/jquery.js'
   '/vendor/modernizr.js'
   '/vendor/prettify.js'
-  '/scripts.js'
+  '/scripts/script.js'
 ]).toHTML()

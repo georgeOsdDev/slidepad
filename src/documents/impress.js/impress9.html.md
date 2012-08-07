@@ -10,6 +10,7 @@ datarotatex: '-40'
 datarotatey: 10
 datascale: 2
 ---
-<span class="have">Check</span> <span class="you">about</span> <span class="noticed">Dependencies</span> <span class="its">it's</span> <span class="in">available</span> <b>Below<sup>*</sup></b>?
- * impress.js[https://github.com/bartaz/impress.js/](https://github.com/bartaz/impress.js/)
- * Docpad:[https://github.com/bevry/docpad](https://github.com/bevry/docpadß)
+<span class="have">Check</span> <span class="you">about</span> <span class="noticed">Dependencies</span>
+<span class="its">it's</span> <span class="in">available</span> <b>Below</b>
+ [https://github.com/bartaz/impress.js/](https://github.com/bartaz/impress.js/)
+ [https://github.com/bevry/docpad](https://github.com/bevry/docpadß)

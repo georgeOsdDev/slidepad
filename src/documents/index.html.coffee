@@ -14,7 +14,7 @@ section id:'content', class:'content', ->
   div '.marketing', ->
     h1 "Demos"
     p '.marketing-byline', ->
-      text "Check out Demo presentation below."
+      text "Check out Demo presentations below."
     ul class:'thumbnails example-sites', ->
       li '.span3', ->
         a '.thumbnail', href:'/big', target:'_blank', ->
@@ -40,14 +40,14 @@ section id:'content', class:'content', ->
     h1 "Dependencies"
     p '.marketing-byline', ->
       text "Slidepad directry depend on these libraries."
-      text "check there licenses and how to use."      
+      text "check there licenses of them and how to use."      
     div '.row', ->
       div '.span6', ->
         h2 "Docpad"
         p """
-          The main framework of SlideInitilizer.
-          Docpad generatea Server, perse markdown, create view.
-          Of course we use many plugins of Docpad <br>
+          The main framework of slidepad.
+          Docpad generate a Server, perse markdown, create view.
+          Slidepad also use many plugins of Docpad <br>
           (e.g. coffeekup)
         """
         a href:"https://github.com/bevry/docpad", target:"_blank", ->
@@ -61,7 +61,7 @@ section id:'content', class:'content', ->
             This page and 
           """
           a href:"/pages/start", ->
-            text "Get Started"
+            text "Getting Started"
           text "is based on Twitter-Bootstrap."
         a href:"http://twitter.github.com/bootstrap/", target:"_blank", ->
           text "http://twitter.github.com/bootstrap/"
@@ -72,7 +72,7 @@ section id:'content', class:'content', ->
       div '.span3', ->
         h2 "Big"
         p """
-          Big is Presentation software for busy busy hackers as big as it can be no config.
+          Presentation software for busy busy hackers as big as it can be no config.
         """
         a href:"https://github.com/tmcw/big/", target:"_blank", ->
           text "https://github.com/tmcw/big/"
@@ -81,18 +81,19 @@ section id:'content', class:'content', ->
         p """
           A JavaScript library for building modern HTML presentations.
         """
+        br ->
         a href:"http://imakewebthings.com/deck.js/", target:"_blank", ->
           text "http://imakewebthings.com/deck.js/"
       div '.span3', ->
         h2 "HTML5Slides"
-        p "A Google HTML5 slide template By Luke Mahé and Marcin Wichary."
+        p "A very simple Google HTML5 slide template By Luke Mahé and Marcin Wichary."
         a href:"http://code.google.com/p/html5slides/", target:"_blank", ->
           text "http://code.google.com/p/html5slides/"
       div '.span3', ->
         h2 "impress.js"
         p """
-          It's a presentation framework based on the power of
-          CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.
+          Presentation framework based on the power of
+          CSS3 transforms and transitions in modern browsers.
         """
         a href:"https://github.com/bartaz/impress.js/", target:"_blank", ->
           text "https://github.com/bartaz/impress.js/"

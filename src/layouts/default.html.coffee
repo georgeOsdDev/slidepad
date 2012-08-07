@@ -105,6 +105,7 @@ html lang: 'en', ->
 				text @getBlock('styles').add([
 					'/vendor/twitter-bootstrap/css/bootstrap.css'
 					'/vendor/twitter-bootstrap/css/bootstrap-responsive.css'
+					'/vendor/prettify.css'
 					'/styles/style.css'
 				]).toHTML()
 
