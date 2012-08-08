@@ -3,9 +3,9 @@ sectionId:''
 title: 'impress6'
 pageOrder: 6
 tags: ['impress']
-datax: 6700
+datax: 8000
 datay: '-300'
-datascale: 10
+datascale: 1
 ---
 ### Step.2
 <span style="font-size:80%;">

@@ -8,7 +8,7 @@ tags: ['page']
 ---
 
 # Getting Started
-## 目次
+
 * [概要](#10)
 * [稼働環境](#20)
 * [インストール](#30)
@@ -77,34 +77,72 @@ http://localhost:9778
 <hr id="40" class="soften">
 ## スライドコンテンツの作成
 SlidepadではMarkdownファイルの保存場所および、メタ情報を元に各スライドテンプレートに変換します。
+各マークダウンファイルは以下の様な構成で保存します。マークダウンの内容は各index.html.coffeeにインポートされ、
+最終的にはindex.htmlとして出力されます。
 
-<hr id="41" class="soften">
+    / 
+    └── src
+        └── documents
+            ├── big
+            │   ├── big1.html.md
+            │   ├── big2.html.md
+            │   ├── ...
+            │   ├── 
+            │   └── index.html.coffee
+            ├── deck.js
+            │   ├── deck1.html.md
+            │   ├── deck2.html.md
+            │   ├── ...
+            │   ├── 
+            │   └── index.html.coffee
+            ├── h5slides
+            │   ├── h5slides1.html.md
+            │   ├── h5slides2.html.md
+            │   ├── ...
+            │   ├── 
+            │   └── index.html.coffee
+            ├── impress.js
+            │   ├── impress1.html.md
+            │   ├── impress2.html.md
+            │   ├── ...
+            │   ├── 
+            │   └── index.html.coffee
+            ├── index.html.coffee
+            ├── pages
+            │   ├── start-ja.html.md
+            │   └── start.html.md
+            ├── scripts
+            │   └── script.js.coffee
+            └── styles
+                └── style.css.styl
+
+
+<hr id="31" class="soften-nomargin">
+
+<hr id="41" class="soften-normargin">
 
 ### Bigをテンプレートに使う場合
 
 __マークダウン__
 
     ---
-    title: 'big1'
     pageOrder: 1
     tags: ['big']
+    title: 'big1'
     ---
     use _&harr;_ to navigate
 
 ---で囲まれた先頭５行がメタ情報となります。
 なお、---で囲まれた部分はcoffee-scriptの文法となります。
 
-* titleには名前を指定します。（任意）
 * pageOrderにはスライドに表示する順番を記載します。__（必須）__
 * tagsには'big'を含めてください。__（必須）__
+* titleには名前を指定します。（任意）
 
-__保存先__
-
-    /src/documents/big/
 
 __変換内容__
 
-Bigはdivエレメント単位でスライドを表示するためSlidepadでは１マークダウンファイルを1divエレメントとしてindex.htmlに出力します。
+Bigは&lt;div&gt;エレメント単位でスライドを表示するためSlidepadでは１マークダウンファイルを1&lt;div&gt;エレメントとしてindex.htmlに出力します。
 
 __スタイル__
 
@@ -131,10 +169,10 @@ __マークダウン__
 
     ---
     sectionId:'deck2'
-    title: 'deck2'
     pageOrder: 2
     tags: ['deck']
     child: ['deck3','deck4','deck5']
+    title: 'deck2'
     ---
     ## Deck.js is
     ### Modern HTML Presentations
@@ -143,18 +181,15 @@ __マークダウン__
 なお、---で囲まれた部分はcoffee-scriptの文法となります。
 
 * sectionIdにはスライドのsection別のidを記載します。__（必須）__
-* titleには任意の名前を指定します。（任意）
 * pageOrderにはスライドに表示する順番を記載します。__（必須）__
 * tagsには'deck'を含めてください。__（必須）__
 * childは1スライド内で複数のセクションをネストさせる場合に記載します。（任意）
+* titleには任意の名前を指定します。（任意）
 
-__保存先__
-
-    /src/documents/deck/
 
 __変換内容__
 
-deck.jsはsectionエレメント単位でスライドを表示・アニメーションするためSlidepadでは１マークダウンファイルを1sectionエレメントとしてindex.htmlに出力します。
+deck.jsは&lt;section&gt;エレメント単位でスライドを表示・アニメーションするためSlidepadでは１マークダウンファイルを1&lt;section&gt;エレメントとしてindex.htmlに出力します。
 １スライド内で複数のセクションをアニメーションさせるためにはchildを記載する必要があります。
 
 __スタイル__
@@ -197,12 +232,8 @@ __スタイル__
     ]).toHTML()
 
 カスタマイズは
-/src/documents/deck/index.html.coffeeのL37移行を参照ください。
-拡張機能の使い方については[オフィシャル](http://imakewebthings.com/deck.js/docs/)を参照してください。
+/src/documents/deck/index.html.coffeeのL37以降を参照ください。
 
-__表示__
-
-  http://localhost:9778/deck.js/
 
 __参考__
 
@@ -214,10 +245,10 @@ deck.jsについて詳しくは[こちら](http://imakewebthings.com/deck.js/doc
 __マークダウン__
 
     ---
-    title: 'h5slides2'
     pageOrder: 2
     tags: ['h5slides']
     additionalClass:'build'
+    title: 'h5slides2'
     ---
 
     ### about html5slides
@@ -228,31 +259,25 @@ __マークダウン__
 ---で囲まれた先頭５行がメタ情報となります。
 なお、---で囲まれた部分はcoffee-scriptの文法となります。
 
-* titleには任意の名前を指定します。（任意）
 * pageOrderにはスライドに表示する順番を記載します。__（必須）__
 * tagsには'h5slides'を含めてください。__（必須）__
 * 追加でclassを適用する場合はadditionalClassを記載してください。（任意）
- * スライド内アニメーションを適用する場合は'build'と記載します。
-
-__保存先__
-
-    /src/documents/h5slides/
+ * e.g.スライド内アニメーションを適用する場合は'build'と記載します。
+* titleには任意の名前を指定します。（任意）
 
 __変換内容__
 
-html5slidesはarticleエレメント単位でスライドを表示するためSlidepadでは１マークダウンファイルを1articleエレメントとしてindex.htmlに出力します。
+html5slidesは&lt;article&gt;エレメント単位でスライドを表示するためSlidepadでは１マークダウンファイルを1&lt;article&gt;エレメントとしてindex.htmlに出力します。
 
 __スタイル__
 
 デフォルトではdefault Google templateを適用しています。
 別のスタイルを適用したい場合は、/src/documents/h5slides/index.html.coffeeのL11を修正してください。
-適用可能なスタイルについては[こちら](http://code.google.com/p/html5slides/)を参照してください。
+
     section class:'slides layout-regular template-default', ->
 
+適用可能なスタイルについては[こちら](http://code.google.com/p/html5slides/)を参照してください。
 
-__表示__
-
-  http://localhost:9778/h5slides
 
 __参考__
 
@@ -285,11 +310,12 @@ __マークダウン__
 ---で囲まれた先頭５行がメタ情報となります。
 なお、---で囲まれた部分はcoffee-scriptの文法となります。
 
-* sectionIdにはスライドのsection別のidを記載します。（任意）
  * 必須ではありませんが、デモではimpress.jsのサンプルCSSを適用しているため設定しています。
-* titleには任意の名前を指定します。（任意）
 * pageOrderにはスライドに表示する順番を記載します。__（必須）__
 * tagsには'impress'を含めてください。__（必須）__
+* titleには任意の名前を指定します。（任意）
+* sectionIdにはスライドのsection別のidを記載します。（任意）
+* additionalClassには追加したいクラスを任意で記載します。（任意）
 * impress.jsで使用するメタデータを任意で記載します。（任意）
  * 使用可能なメタデータ
    * datax data-xに変換されます
@@ -301,15 +327,10 @@ __マークダウン__
    * datarotatez data-rotate-zに変換されます
    * datascale data-scaleに変換されます
 
-* additionalClassには追加したいクラスを任意で記載します。（任意）
-
-__保存先__
-
-    /src/documents/impress.js/
 
 __変換内容__
 
-impress.jsのステップ単位にメタ情報を追記して１マークダウンファイルを1articleステップとしてindex.htmlに出力します。
+impress.jsの&lt;div&gt;にメタ情報を追記して１マークダウンファイルを1&lt;div&gt;ステップとしてindex.htmlに出力します。
 
 __スタイル__
 
@@ -324,10 +345,6 @@ __スタイル__
         '/vendor/impress/css/impress-demo.css'
       ]).toHTML()
 
-
-__表示__
-
-  http://localhost:9778/impress.js
 
 __参考__
 

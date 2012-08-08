@@ -9,7 +9,7 @@ section id:'content', class:'content', ->
     p ->
       text """
         Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server.<br>
-        Once You write something in markdown syntax, it becomes HTML5 Slides.
+        Once You write document in markdown syntax, it becomes HTML5 Slides.
       """
   div '.marketing', ->
     h1 "Demos"
@@ -40,7 +40,7 @@ section id:'content', class:'content', ->
     h1 "Dependencies"
     p '.marketing-byline', ->
       text "Slidepad directry depend on these libraries."
-      text "check there licenses of them and how to use."      
+      text "check licenses of them and how to use."      
     div '.row', ->
       div '.span6', ->
         h2 "Docpad"
