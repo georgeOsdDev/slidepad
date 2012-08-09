@@ -126,7 +126,7 @@ html lang: 'en', ->
 		# Analytics
 		script """
 			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', '']);
+			_gaq.push(['_setAccount', 'UA-15502477-7']);
 			_gaq.push(['_trackPageview']);
 			(function() {
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;

@@ -11,6 +11,26 @@ section id:'content', class:'content', ->
         Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server.<br>
         Once You write document in markdown syntax, it becomes HTML5 Slides.
       """
+    br ->
+    a href:"https://github.com/georgeOsdDev/slidepad", class:"btn btn-primary btn-large", target:"_blank", ->
+      text "View project on GitHub"
+
+    # AddThis Button  http://www.addthis.com/
+    div id:"social-buttons",class:"addthis_toolbox addthis_default_style",->
+      a class:"addthis_button_preferred_1"
+      a class:"addthis_button_preferred_2"
+      a class:"addthis_button_preferred_3"
+      a class:"addthis_button_preferred_9"
+      a class:"addthis_button_preferred_10"
+      a class:"addthis_button_preferred_11"
+      a class:"addthis_button_compact"
+      script """
+        var addthis_config = {'data_track_addressbar':true};
+        """
+      script type:"text/javascript",src:"http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f6378c46f6668f9"
+    # AddThis Button END
+
+
   div '.marketing', ->
     h1 "Demos"
     p '.marketing-byline', ->

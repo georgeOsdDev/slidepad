@@ -1,3 +1,9 @@
+# Slidepad
+Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server.
+Once You write document in markdown syntax, it becomes HTML5 Slides.
+
+[Demo](http://slidepad.herokuapp.com/)
+
 ## Getting Started
 1. quick start
 
