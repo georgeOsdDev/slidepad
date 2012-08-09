@@ -19,10 +19,15 @@ text @getBlock('scripts').add([
 
 script type:"text/javascript", -> 
   """
-  setTimeout(function(){
-    $(function() {
-      $('body').addClass('deck-container')
-      $.deck('.slide');
-    });
-  },100)
+    function wait(){
+      setTimeout(function(){
+        if (window.jQuery){
+          $('body').addClass('deck-container')
+          $.deck('.slide');
+        } else {
+          wait();
+        }
+      },500)
+    }
+    wait();
   """

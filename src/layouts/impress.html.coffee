@@ -16,10 +16,15 @@ text @getBlock('scripts').add([
 ]).toHTML()
 script type:"text/javascript", -> 
   """
-    setTimeout(function(){
-      $(function() {
-        impress().init();
-      });
-    },500)
+    function wait(){
+      setTimeout(function(){
+        if (window.jQuery){
+          impress().init();
+        } else {
+          wait();
+        }
+      },500)
+    }
+    wait();
   """
 
