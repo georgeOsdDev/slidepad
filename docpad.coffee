@@ -72,26 +72,26 @@ docpadConfig = {
 	collections:
 		# For instance, this one will fetch in all documents that have pageOrder set within their meta data
 		pages: (database) ->
-			database.findAllLive({pageOrder: $exists: true}, [pageOrder:1,title:1])
+			database.findAllLive({pageOrder: {$exists: true}}, [pageOrder:1,title:1])
 
 		navmenus: (database) ->
-			database.findAllLive({tags: $has: 'navmenu' ,pageOrder: $exists: true},{pageOrder:1})
+			database.findAllLive({tags: {$has: 'navmenu'} ,pageOrder: {$exists: true}},{pageOrder:1})
 
 		# big
 		big: (database) ->
-			database.findAllLive({tags: $has: 'big' ,pageOrder: $exists: true},{pageOrder:1})
+			database.findAllLive({tags: {$has: 'big'} ,pageOrder: {$exists: true}},{pageOrder:1})
 
 		# deck
 		deck: (database) ->
-			database.findAllLive({tags: $has: 'deck' ,pageOrder: $exists: true},{pageOrder:1})
+			database.findAllLive({tags: {$has: 'deck'} ,pageOrder: {$exists: true}},{pageOrder:1})
 
 		# h5slide
 		h5slides: (database) ->
-			database.findAllLive({tags: $has: 'h5slides' ,pageOrder: $exists: true},{pageOrder:1})
+			database.findAllLive({tags: {$has: 'h5slides'} ,pageOrder: {$exists: true}},{pageOrder:1})
 
 		# impress
 		impress: (database) ->
-			database.findAllLive({tags: $has: 'impress' ,pageOrder: $exists: true},{pageOrder:1})
+			database.findAllLive({tags: {$has: 'impress'} ,pageOrder: {$exists: true}},{pageOrder:1})
 
 	# =================================
 	# DocPad Events
