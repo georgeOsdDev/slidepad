@@ -2,7 +2,7 @@
 title: 'h5slides7'
 pageOrder: 7
 tags: ['h5slides']
-additionalClass:'smaller'
+additionalClass: 'smaller'
 ---
 
 ### And

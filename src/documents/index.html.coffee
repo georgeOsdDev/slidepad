@@ -3,8 +3,8 @@ layout: 'page'
 title: 'Home'
 style: 'bootstrap'
 ---
-section id:'content', class:'content', ->
-  div class:'hero-unit', ->
+section '#content.content', ->
+  div '.hero-unit', ->
     h1 "Welcome to Slidepad!"
     p ->
       text """
@@ -12,18 +12,18 @@ section id:'content', class:'content', ->
         Once You write document in markdown syntax, it becomes HTML5 Slides.
       """
     br ->
-    a href:"https://github.com/georgeOsdDev/slidepad", class:"btn btn-primary btn-large", target:"_blank", ->
+    a href:"https://github.com/georgeOsdDev/slidepad", ".btn.btn-primary.btn-large", target:"_blank", ->
       text "View project on GitHub"
 
     # AddThis Button  http://www.addthis.com/
-    div id:"social-buttons",class:"addthis_toolbox addthis_default_style",->
-      a class:"addthis_button_preferred_1"
-      a class:"addthis_button_preferred_2"
-      a class:"addthis_button_preferred_3"
-      a class:"addthis_button_preferred_9"
-      a class:"addthis_button_preferred_10"
-      a class:"addthis_button_preferred_11"
-      a class:"addthis_button_compact"
+    div "#social-buttons.addthis_toolbox.addthis_default_style",->
+      a ".addthis_button_preferred_1"
+      a ".addthis_button_preferred_2"
+      a ".addthis_button_preferred_3"
+      a ".addthis_button_preferred_9"
+      a ".addthis_button_preferred_10"
+      a ".addthis_button_preferred_11"
+      a ".addthis_button_compact"
       script """
         var addthis_config = {'data_track_addressbar':true};
         """
@@ -35,7 +35,7 @@ section id:'content', class:'content', ->
     h1 "Demos"
     p '.marketing-byline', ->
       text "Check out Demo presentations below."
-    ul class:'thumbnails example-sites', ->
+    ul '.thumbnails.example-sites', ->
       li '.span3', ->
         a '.thumbnail', href:'/big', target:'_blank', ->
           img src:'/image/demo-big.png', alt:"Big"
@@ -54,13 +54,13 @@ section id:'content', class:'content', ->
           text "impress.js"
 
 
-  hr class:'soften'
+  hr '.soften'
 
   div '.marketing', ->
     h1 "Dependencies"
     p '.marketing-byline', ->
       text "Slidepad directry depend on these libraries."
-      text "check licenses of them and how to use."      
+      text "check licenses of them and how to use."
     div '.row', ->
       div '.span6', ->
         h2 "Docpad"
@@ -78,7 +78,7 @@ section id:'content', class:'content', ->
           text """
             Simple and flexible HTML, CSS, and Javascript for popular user interface components
             and interactions as you know.<br>
-            This page and 
+            This page and
           """
           a href:"/pages/start", ->
             text "Getting Started"
@@ -86,7 +86,7 @@ section id:'content', class:'content', ->
         a href:"http://twitter.github.com/bootstrap/", target:"_blank", ->
           text "http://twitter.github.com/bootstrap/"
 
-    hr class:'soften-nomargin'
+    hr '.soften-nomargin'
 
     div '.row', ->
       div '.span3', ->

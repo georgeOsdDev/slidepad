@@ -8,7 +8,7 @@ tags: ['navmenu']
 ---
 
 # Chose template style
-section class:'slides layout-regular template-default', ->
+section '.slides.layout-regular.template-default', ->
   # Search document
   @getCollection('h5slides').toJSON().forEach (page) =>
     additionalClass = page.additionalClass or ''

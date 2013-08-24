@@ -1,5 +1,5 @@
 ---
-sectionId:'deck3'
+sectionId: 'deck3'
 title: 'deck3'
 pageOrder: 3
 tags: ['deck']

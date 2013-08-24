@@ -2,7 +2,7 @@
 title: 'h5slides2'
 pageOrder: 2
 tags: ['h5slides']
-additionalClass:'build'
+additionalClass: 'build'
 ---
 
 ### about html5slides

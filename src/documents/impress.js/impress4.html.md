@@ -1,5 +1,5 @@
 ---
-sectionId:'tiny'
+sectionId: 'tiny'
 title: 'impress4'
 pageOrder: 4
 tags: ['impress']

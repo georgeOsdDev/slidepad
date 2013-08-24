@@ -17,17 +17,17 @@ text @getBlock('scripts').add([
   '/vendor/deck/extensions/scale/deck.scale.js'
 ]).toHTML()
 
-script type:"text/javascript", -> 
+script type:"text/javascript", ->
   """
-    function wait(){
+    function wait(t){
       setTimeout(function(){
         if (window.jQuery){
           $('body').addClass('deck-container')
           $.deck('.slide');
         } else {
-          wait();
+          wait(500);
         }
-      },500)
+      },t)
     }
-    wait();
+    wait(0);
   """

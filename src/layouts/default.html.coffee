@@ -56,7 +56,7 @@ html lang: 'en', ->
 
 		# Page title as shown in the browser tab and window
 		title siteTitle
-	
+
 		# Icons
 		link rel:'shortcut icon'               , href:'ico/favicon.ico'
 		link rel:'apple-touch-icon-precomposed', href:'ico/apple-touch-icon-144-precomposed.png', sizes:'144x144'
@@ -67,11 +67,11 @@ html lang: 'en', ->
 		# -----------------------------
 		# Style and Script for head tag
 		switch @document.layout
-			when 'big.html.coffee'
+			when 'big'
 				link rel:'stylesheet', href:'/vendor/big/big.css', type:'text/css'
 				script src:'/vendor/big/big.js'
 
-			when 'deck.html.coffee'
+			when 'deck'
 				text @getBlock('styles').add([
 					'/vendor/deck/core/deck.core.css'
 					# Chose extentions
@@ -91,10 +91,10 @@ html lang: 'en', ->
 				]).toHTML()
 				script src:'/vendor/deck/modernizr.custom.js'
 
-			when 'h5slides.html.coffee'
+			when 'h5slides'
 				script src:'http://html5slides.googlecode.com/svn/trunk/slides.js'
-			
-			when 'impress.html.coffee'
+
+			when 'impress'
 				# write own style
 				text @getBlock('styles').add([
 					'http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic'

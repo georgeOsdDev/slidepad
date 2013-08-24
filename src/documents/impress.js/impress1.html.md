@@ -1,9 +1,9 @@
 ---
-sectionId:'title'
+sectionId: 'title'
 title: 'impress1'
 pageOrder: 1
 tags: ['impress']
-additionalClass:'step'
+additionalClass: 'step'
 datax: 0
 datay: 0
 datascale: 4

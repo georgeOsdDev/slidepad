@@ -1,5 +1,5 @@
 ---
-sectionId:''
+sectionId: ''
 title: 'impress6'
 pageOrder: 6
 tags: ['impress']

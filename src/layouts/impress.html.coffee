@@ -14,17 +14,17 @@ text @getBlock('scripts').add([
   '/vendor/jquery.js'
   '/vendor/impress/js/impress.js'
 ]).toHTML()
-script type:"text/javascript", -> 
+script type:"text/javascript", ->
   """
-    function wait(){
+    function wait(t){
       setTimeout(function(){
         if (window.jQuery){
           impress().init();
         } else {
-          wait();
+          wait(500);
         }
-      },500)
+      },t)
     }
-    wait();
+    wait(0);
   """
 

@@ -2,14 +2,14 @@
 layout: default
 style: 'bootstrap'
 ---
-div class:'navbar navbar-fixed-top', ->
+div '.navbar.navbar-fixed-top', ->
   div '.navbar-inner', ->
     div '.container', ->
-      a class:'brand', href:'/', ->
+      a '.brand', href:'/', ->
         text "slidepad"
       ul '.nav', ->
         @getCollection('navmenus').toJSON().forEach (page) =>
-          li typeof:'sioc:Page', about:page.url, class:"#{'active' if @document.url is page.url}", ->
+          li typeof:'sioc:Page', about:page.url, ".#{'active' if @document.url is page.url}", ->
             a href:page.url ,property:'dc:title', ->
               text page.title
       a href:'https://github.com/georgeOsdDev', target:'_blank', ->
@@ -18,7 +18,7 @@ div class:'navbar navbar-fixed-top', ->
 div '.container', ->
   text @content
 
-  hr class:'soften-nomargin'
+  hr '.soften-nomargin'
 
   footer id:'footer', ->
     p ->
